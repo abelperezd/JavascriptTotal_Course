@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone repository</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/axios@1.3.4/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <h1>Phone repository</h1>
+
+    <hr>
+
+    <div id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Color</th>
+                    <th>Memory</th>
+                    <th>Processor</th>
+                </tr>
+            </thead>
+            <tbody id="rowContainer">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h3>Modify phone</h3>
+        <button id="searchBtn">Search</button>
+        <input id="mId" placeholder="ID" type="number"></input>
+        <button id="deleteBtn">Delete</button>
+        <br><br>
+        <label>Brand: </label>
+        <textarea id="mBrand" rows="1"></textarea>
+        <br>
+        <label>Model: </label>
+        <textarea id="mModel" rows="1"></textarea>
+        <br>
+        <label>Color: </label>
+        <textarea id="mColor" rows="1"></textarea>
+        <br>
+        <label>Memory: </label>
+        <textarea id="mMemory" rows="1"></textarea>
+        <br>
+        <label>Processor: </label>
+        <textarea id="mProcessor" rows="1"></textarea>
+        <br>
+        <button id="modifyBtn">Modify</button>
+
+    </div>
+
+    <div>
+        <h3>Add phone</h3>
+        <input id="aBrand" placeholder="Brand"></input>
+        <input id="aModel" placeholder="Model"></input>
+        <input id="aColor" placeholder="Color"></input>
+        <input id="aMemory" placeholder="Memory"></input>
+        <input id="aProcessor" placeholder="Processor"></input>
+        <button id="addBtn">Add</button>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

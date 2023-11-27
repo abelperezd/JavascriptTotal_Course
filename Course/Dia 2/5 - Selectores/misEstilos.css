@@ -1,0 +1,33 @@
+/* de tipo */
+body {
+    background-color: bisque;
+}
+
+/* de clase */
+.principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*  de id  -> solamente se puede aplicar a un elemento en el documento, que se identifica por ese id */
+#informacion {
+    text-align: center;
+}
+
+/* de atributo -> en los elimentos que cumplan ciertos requisitos. e.g. los links que contengan .edu */
+a[href*=".edu"] {
+    background-color: gold;
+}
+
+/* pseudo-clases ->  elementos que cumplen cierto estado*/
+h1:hover {
+    color: red
+}
+
+.principal:hover {
+    color: rgb(46, 150, 96)
+}
+
+/* pseudo-elementos -> aplican a una parte determinada de un elemento*/
+.principal::first-line {
+    background-color: lightgray;
+}

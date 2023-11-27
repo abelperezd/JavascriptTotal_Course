@@ -1,0 +1,17 @@
+{
+    "bank": "Bank of Springfield",
+    "office": "Springfield, IL",
+    "owner": "Smith, John",
+    "acc_number": "1752461/08",
+    "balance": [
+        {
+            "currency": "USD",
+            "amount": 725.09
+        },
+        {
+            "currency": "EUR",
+            "amount": 195.67
+        }
+    ],
+    "creation_date": "01/05/2021"
+}

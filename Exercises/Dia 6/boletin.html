@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Grade computer</title>
+    <link rel="stylesheet" href="boletin.css">
+    <script src="boletin.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.jpg" />
+        <h2>Grade computer </h2>
+    </div>
+
+    <div class="estudiante">
+        <h3>Student: Sample Name</h3>
+    </div>
+
+    <h4>Marks:</h4>
+    <div class="marks">
+        <span class="subject">Spanish:</span> <input type="number" class="input" id="spanish" placeholder="mark" min="0"
+            max="10">
+        <br>
+        <br>
+        <span class="subject">Maths:</span> <input type="number" class="input" id="maths" placeholder="mark" min="0"
+            max="10">
+        <br>
+        <br>
+        <span class="subject">Geography:</span> <input type="number" class="input" id="geography" placeholder="mark"
+            min="0" max="10">
+        <br>
+        <br>
+        <span class="subject">History:</span> <input type="number" class="input" id="history" placeholder="mark" min="0"
+            max="10">
+        <br>
+    </div>
+
+    <button onclick="compute()">Compute</button>
+
+    <div class="info">
+        <h4>Average: <span id="average"></span></h4>
+
+        <h4>Best mark: <span id="bestMark"></span></h4>
+
+        <h4>Failed subjects? <span id="failed"></span></h4>
+    </div>
+
+    <br>
+    <br>
+
+    <h4>Scores:</h4>
+    <ul id="listScores">
+    </ul>
+</body>
+
+</html>

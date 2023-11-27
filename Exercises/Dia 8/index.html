@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Film advsier</title>
+</head>
+
+<body>
+    <h2>Workers register</h2>
+    <div class="inputs">
+        <label for="id">Id: </label>
+        <input type="text" class="text" id="id" placeholder="12399485P">
+        <br>
+        <label for="name">Name: </label>
+        <input type="text" class="text" id="name" placeholder="John">
+        <br>
+        <label for="surname">Surname: </label>
+        <input type="text" class="text" id="surname" placeholder="Smith">
+        <br>
+        <label for="surname">Birthday: </label>
+        <input type="date" class="input" id="birthday" placeholder="13/05/1996">
+        <br>
+        <label for="age">Age: </label>
+        <input type="number" class="number" id="age" placeholder="55" min="1" max="130">
+
+        <br>
+        <label for="position">Position: </label>
+        <select name="position" id="position">
+            <option value="pm">Project manager</option>
+            <option value="fed">Frontend dev</option>
+            <option value="bed">Backend dev</option>
+            <option value="fsd">Fullstack dev</option>
+            <option value="do">Devops</option>
+            <option value="hr">HR</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div class="buttons">
+        <button onclick="addWorker()">Add worker</button>
+    </div>
+
+    <div class="divWorkers">
+        <h3>Workers list</h3>
+
+        <ol id="workersList">
+
+        </ol>
+
+    </div>
+
+
+</body>
+
+</html>

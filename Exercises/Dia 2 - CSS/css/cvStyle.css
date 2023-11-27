@@ -1,0 +1,10 @@
+body,
+header {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: burlywood;
+}
+
+#underConstruction {
+    text-align: center;
+    font-size: large;
+}

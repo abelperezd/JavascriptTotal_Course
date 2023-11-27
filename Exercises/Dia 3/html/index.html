@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quiz</title>
+</head>
+
+<body onload="startTimer()">
+    <div>
+        <h2>
+            Answer the quiz in less than <span id="timeAmount"></span> seconds!
+        </h2>
+    </div>
+
+    <div>
+        <p id="remainingTime"> </p>
+    </div>
+
+    <div>
+        <button id="sendButton" onclick="checkAnswers()">Send</button>
+    </div>
+
+    <div>
+        <p id="wrongAnswer"> </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class=question>
+            <h4>Question 1: <span>5+7</span> </h4>
+            <input type="number" id="q1">
+        </div>
+        <div class=question>
+            <h4>Question 2: <span>10+1</span> </h4>
+            <input type="number" id="q2">
+        </div>
+        <div class=question>
+            <h4>Question 3: <span>7+2</span> </h4>
+            <input type="number" id="q3">
+        </div>
+        <div class=question>
+            <h4>Question 4: <span>6+8</span> </h4>
+            <input type="number" id="q4">
+        </div>
+        <div class=question>
+            <h4>Question 5: <span>14+7</span> </h4>
+            <input type="number" id="q5">
+        </div>
+    </div>
+
+    <audio id="gameOver" type="audio/mpeg">Sound disabled</audio>
+
+    <script>
+        const timeAmount = 20;
+
+        let quizCompleted = false;
+
+        let q1 = document.getElementById("q1");
+        let q2 = document.getElementById("q2");
+        let q3 = document.getElementById("q3");
+        let q4 = document.getElementById("q4");
+        let q5 = document.getElementById("q5");
+
+        let questionsAnsered = false;
+        let panelAlreadyDisplayed = false;
+
+        let remainingTime = document.getElementById("remainingTime");
+        let wrongAnswer = document.getElementById("wrongAnswer");
+        remainingTime.textContent = timeAmount
+
+        let timer;
+
+        let updateTimerInterval;
+        let endQuizInterval;
+
+        document.getElementById("timeAmount").textContent = timeAmount
+
+        function endQuiz() {
+            if (quizCompleted) {
+                quizCorrect();
+            }
+            else {
+                document.getElementById("gameOver").play();
+                alert("Timeout, try again");
+                location.reload();
+            }
+        }
+
+        function updateTimer() {
+            if (timer > 0) {
+                timer--;
+                remainingTime.textContent = timer;
+            }
+            else {
+                clearInterval(updateTimerInterval)
+            }
+        }
+
+        function startTimer() {
+            timer = timeAmount
+            updateTimerInterval = setTimeout(endQuiz, timeAmount * 1010)
+            endQuizInterval = setInterval(updateTimer, 1000)
+        }
+
+        function checkAnswers() {
+
+            let correctAnswers = true;
+            if (parseInt(q1.value) != 12)
+                correctAnswers = false;
+            if (parseInt(q2.value) != 11)
+                correctAnswers = false;
+            if (parseInt(q3.value) != 9)
+                correctAnswers = false;
+            if (parseInt(q4.value) != 14)
+                correctAnswers = false;
+            if (parseInt(q5.value) != 21)
+                correctAnswers = false;
+
+            if (correctAnswers) {
+                quizCorrect();
+            }
+            else
+                quizIncorect()
+        }
+
+        function quizCorrect() {
+            quizCompleted = true;
+            alert("Quiz passed!")
+            window.location.href = "quizCompleted.html";
+            wrongAnswer.textContent = ""
+
+            clearInterval(endQuizInterval)
+            clearInterval(updateTimerInterval)
+        }
+
+        function quizIncorect() {
+            wrongAnswer.textContent = "Incorrect answers!"
+        }
+
+    </script>
+
+</body>
+
+</html>

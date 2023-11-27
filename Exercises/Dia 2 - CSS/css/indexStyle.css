@@ -1,0 +1,99 @@
+body,
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+}
+
+body {
+    padding: 15px;
+    background-image: url(../Images/bg.jpg);
+    background-size: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+
+#headerName {
+    text-align: center;
+}
+
+hr {
+    width: 95%;
+    color: gray;
+}
+
+.centered-text {
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+        /* Prevents line breaks */
+}
+
+.currentPage {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div img {
+    float: right;
+    border-radius: 8px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    width: 15%;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3~h5 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3~h5::first-letter {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+u {
+    text-decoration-thickness: 0.01px;
+}
+
+ul>li {
+    font-weight: bold;
+}
+
+ul>li>span {
+    font-weight: lighter;
+}
+
+.spanException {
+    background-color: aqua;
+}
+
+ul>li>span:hover {
+    background-color: gold;
+    text-decoration: underline;
+}
+
+div P[align="left"]:hover::first-line {
+    background-color: burlywood;
+    text-decoration: line-through;
+}
+
+div P[align="left"]:hover::first-letter {
+    background-color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.small {
+    font-size: small;
+}

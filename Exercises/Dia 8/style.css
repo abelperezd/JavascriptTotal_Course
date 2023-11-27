@@ -1,0 +1,71 @@
+body {
+
+    font-size: small;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.inputs {
+    padding-left: 20%;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+}
+
+input {
+    height: 15px;
+    font-size: 10px;
+}
+
+input.text {
+    width: 70px;
+}
+
+input.number {
+    width: 40px;
+
+}
+
+select {
+    height: 20px;
+    font-size: 10px;
+}
+
+button {
+    background-color: bisque;
+    width: 100px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+
+#result {
+    font-size: 10px;
+    width: 139px;
+    border: 1px solid #333;
+    background-color: rgb(184, 255, 184);
+    min-height: 1em;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: black
+}
+
+.divWorkers {
+    padding-left: 20%;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ul {
+    padding: 10px;
+}

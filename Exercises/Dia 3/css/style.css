@@ -1,0 +1,44 @@
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+
+h4 {
+    margin-bottom: 3px;
+}
+
+h4 span {
+    font-weight: normal;
+}
+
+
+.question {
+
+    background-color: burlywood;
+}
+
+#wrongAnswer {
+    color: red;
+}
+
+#sendButton {
+    background-color: yellowgreen;
+    color: rgb(50, 50, 50);
+}
+
+#sendButton:hover {
+    background-color: greenyellow;
+    border-color: green;
+}
+
+#remainingTime {
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+    color: red;
+    display: inline-block;
+    /* Add this property to make the border fit the text width */
+}

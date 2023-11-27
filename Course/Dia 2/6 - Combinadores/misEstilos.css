@@ -1,0 +1,44 @@
+/*
+Combinador descendiente -> aplica a todas a las etiquetas que esten dentro de otra, sin importar que sean
+hijos directos o no.
+Aplica solo a los párrafos que esten dentro de un div 
+*/
+div p {
+    color: green;
+}
+
+/* Este prevalece sobre el anterior. Cuanto más abajo estén declarados, más peso tienen. */
+/*
+div P {
+    color: gold;
+}
+*/
+
+/* 
+Hijos directos -> Aplica a los hijos inmediatos de un elemento, si hay otros intermedios, no.
+Aplica a los li que sean hijos inmediatos de ol 
+ */
+ol>li {
+    font-weight: bolder;
+}
+
+/* 
+Hermanos generales -> aplica a todos los elementos que vengan despues del elemento principal
+Aplica a todos los h3 que esten debajo de h2 (no hace falta que sean inmediatos, puede haber cosas entre medias) 
+*/
+h2~h3 {
+    background-color: lightskyblue;
+}
+
+/* 
+Hermanos adyacentes: aplica a los elementos que esten inmediatamente despues del otro.
+Aplica a los h5 que esten inmediatamente debajo de los h3 
+*/
+h3+h5 {
+    background-color: chocolate;
+}
+
+/* aplica a los párrafos que estén dentro de un div y que tengan la etiqueta align left, cuando el mouse esté encima */
+div P[align="left"]:hover {
+    background-color: gold;
+}

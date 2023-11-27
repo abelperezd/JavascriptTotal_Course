@@ -1,0 +1,41 @@
+body {
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+}
+
+.input {
+    width: 50px;
+}
+
+.operation {
+    width: 30px;
+    ;
+}
+
+.operation2 {
+    width: 67px;
+    font-size: 10px
+}
+
+.operation3 {
+    width: 40px;
+    font-size: 10px
+}
+
+#result {
+    font-size: 10px;
+    width: 139px;
+    border: 1px solid #333;
+    background-color: rgb(184, 255, 184);
+    min-height: 1em;
+}
+
+table {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: beige;
+    table-layout: fixed;
+    border: 1px solid #333;
+}

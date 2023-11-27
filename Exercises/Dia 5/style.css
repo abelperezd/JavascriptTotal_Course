@@ -1,0 +1,33 @@
+body {
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.input {
+    width: 40px;
+    height: 15px;
+}
+
+select {
+    height: 20px;
+
+}
+
+button {
+    background-color: bisque;
+}
+
+
+#result {
+    font-size: 10px;
+    width: 139px;
+    border: 1px solid #333;
+    background-color: rgb(184, 255, 184);
+    min-height: 1em;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: black
+}

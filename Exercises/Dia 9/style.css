@@ -1,0 +1,43 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: cyan;
+}
+
+#result {
+    font-size: 10px;
+    width: 139px;
+    border: 1px solid #333;
+    background-color: rgb(184, 255, 184);
+    min-height: 1em;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: black
+}
+
+.divCars {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+
+    border-color: white;
+}

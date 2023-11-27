@@ -1,0 +1,17 @@
+F1 -> emmet: wrap with abbreviation -> le damos a la rueda de ajustes y le ponemos el atajo alt + e
+alt + e => cuando seleccionas una palabra, para añadir etiquetas a su alrededor.
+
+
+ctrl + espacio => te sugiere atributos para una etiqueta
+ctrl + k + c => comentario html
+
+//selectores y documentacion de html, css, javascript...: https://developer.mozilla.org/es/docs/Web/CSS/CSS_selectors
+
+//flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+//Express
+npm init -y  
+npm install mysql    
+npm install express
+npm install mysql@latest
+node index.js (to start)

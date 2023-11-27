@@ -1,0 +1,22 @@
+h1 {
+    font-size: 5em;
+    color: aqua;
+}
+
+.h1normal {
+    background-color: rgb(27, 148, 114);
+}
+
+p {
+    text-align: center;
+}
+
+.normal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.destacado {
+    background-color: khaki;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}

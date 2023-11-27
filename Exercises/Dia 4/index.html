@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <table width="150">
+        <tr>
+            <th colspan="12">Calculator</th>
+        </tr>
+
+        <tr>
+            <td colspan="6"><input type="number" class="input" id="inp1"></td>
+            <td colspan="6"><input type="number" class="input" id="inp2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button onclick="add()" class="operation">+</button></td>
+            <td colspan="3"><button onclick="subtract()" class="operation">-</button></td>
+            <td colspan="3"><button onclick="multiply()" class="operation">x</button></td>
+            <td colspan="3"><button onclick="divide()" class="operation">/</button></td>
+        </tr>
+        <tr>
+            <td colspan="6"><button onclick="pow()" class="operation2">pow</button></td>
+            <td colspan="6"><button onclick="sqrt()" class="operation2">sqrt</button></td>
+        </tr>
+        <tr>
+            <td colspan="6"><button onclick="abs()" class="operation2">abs</button></td>
+            <td colspan="6"><button onclick="rand()" class="operation2">rand</button></td>
+        </tr>
+        <tr>
+            <td colspan="12" align="center">
+                <div id="result"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"><button onclick="round()" class="operation3">round</button></td>
+            <td colspan="4"><button onclick="floor()" class="operation3">floor</button></td>
+            <td colspan="4"><button onclick="ceil()" class="operation3">ceil</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>

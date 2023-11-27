@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 40%;
+    margin: 15px auto;
+}
+
+.item:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#synopsis {
+    font-style: italic;
+    color: rgb(180, 180, 180);
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+button {
+    height: 22px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: darkseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}

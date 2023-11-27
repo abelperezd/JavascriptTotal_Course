@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 40%;
+    margin: 15px auto;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+#logo {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+}
+
+#loadingIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#currencies {
+    background-color: white;
+    border-radius: 5%;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.currency {
+    font-weight: bold;
+    color: darkgreen
+}
+
+.amount {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(2, 205, 2);
+}
+
+#title {
+    color: rgb(2, 205, 2);
+}
